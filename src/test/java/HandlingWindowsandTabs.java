@@ -2,7 +2,9 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WindowType;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class HandlingWindowsandTabs {public static void main(String[] args) {
+public class HandlingWindowsandTabs {
+
+    public static void main(String[] args) {
     WebDriverManager.chromedriver().setup();
     ChromeDriver driver = new ChromeDriver();
     driver.manage().window().maximize();

@@ -10,8 +10,7 @@ public class Seleniumtest<WebDriver> {
 		ChromeDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.navigate().to("https://login.yahoo.com");
-//		driver.findElement(By.cssSelector("login-signin")).sendKeys("ibrahimkonlan@yahoo.com");
-     //driver.close();
+
 		WebElement username = driver.findElement(By.id("login-username"));
 		username.isDisplayed();
 		username.isEnabled();
